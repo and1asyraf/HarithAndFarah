@@ -44,8 +44,11 @@ section {
 }
 
 /* Landing Section */
+
 #landing {
-  background-color: #ffffff;
+  background: url('Harith-Farah-Background.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
 }
