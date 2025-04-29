@@ -152,7 +152,6 @@ a:hover {
 }
 
 /* 📱 Mobile Responsive Design */
-/* 
 @media (max-width: 768px) {
   #landing {
     background-attachment: scroll;
@@ -201,8 +200,14 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+  #landing {
+    background-image: url('Harith-Farah-MobileView.png'); /* Mobile Background */
+    background-attachment: scroll; /* Remove fixed attachment on mobile */
+    height: 100vh;
+  }
+
   #landing h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Even smaller for very small screens */
   }
 
   #landing .couple-names {
@@ -225,5 +230,13 @@ a:hover {
   #recommendations li {
     font-size: 0.9rem;
   }
-} 
-  */ 
+
+  #credit .quirky-pic {
+    width: 100px; /* Smaller profile picture for very small screens */
+    height: 100px;
+  }
+
+  #credit p {
+    font-size: 0.9rem; /* Smaller text for tight space */
+  }
+}
