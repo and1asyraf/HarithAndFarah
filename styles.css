@@ -152,6 +152,7 @@ a:hover {
 }
 
 /* 📱 Mobile Responsive Design */
+/* 
 @media (max-width: 768px) {
   #landing {
     background-attachment: scroll;
@@ -225,3 +226,4 @@ a:hover {
     font-size: 0.9rem;
   }
 } 
+  */ 
