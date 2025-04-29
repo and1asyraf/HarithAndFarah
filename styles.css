@@ -365,8 +365,8 @@ section {
   }
 
   .card {
-    flex: 0 0 auto;
     width: 100%;
+    max-width: none;
     height: auto;
     padding: 15px;
     box-sizing: border-box;
@@ -399,7 +399,7 @@ section {
 
   #landing .couple-names {
     font-size: 3.2rem;
-    top: 25%;
+    top: 10%;
     padding: 0 10px;
   }
 
@@ -407,11 +407,14 @@ section {
     font-size: 1.6rem;
     padding: 0 10px;
     text-align: center;
+    margin-bottom: 10px; 
   }
 
   #landing .overlay {
     padding: 20px 10px;
     max-width: 95%;
+    top: 30%;
+    transform: translate(-50%, -50%);
   }
 
   #countdown {
@@ -426,6 +429,12 @@ section {
   #invitation p {
     font-size: 1.1rem;
     padding: 0 10px;
+  }
+
+  .h2-icon {
+    width: 50px; /* Reduce the size of the icon */
+    height: auto;
+    margin-left: 5px; /* Adjust spacing if needed */
   }
 
   /* QR Code Section */
