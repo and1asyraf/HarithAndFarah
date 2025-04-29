@@ -14,6 +14,8 @@
   <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+  <!-- Load confetti with defer -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
 
 </head>
 <body>
@@ -137,6 +139,20 @@
 
   <!-- Link to External JavaScript File -->
   <script src="script.js"></script>
+  <script defer>
+    window.addEventListener('load', () => {
+      // Start confetti after slight delay
+      setTimeout(() => {
+        confetti({
+          particleCount: 350,
+          spread: 170,
+          origin: { y: 0.6 },
+          scalar: 1.6, // Makes confetti bigger
+          colors: ['#FFD700', '#FFFFFF', '#000000'] // Gold and White
+        });
+      }, 300);
+    });
+  </script>
 
 </body>
 </html>
