@@ -339,7 +339,7 @@ section {
 @media (max-width: 480px) {
   /* 1. Use a different landing background image for mobile */
   #landing {
-    background-image: url('Harith-Farah-MobileView.jpg');
+    background-image: url('Harith-Farah-MobileView.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -362,6 +362,9 @@ section {
     flex-direction: column;
     gap: 20px;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .card {
@@ -394,8 +397,10 @@ section {
 
   /* 4. Layout adjustments for fit within screen */
   body, html {
-    overflow-x: hidden;
-    max-width: 100vw;
+    overflow-x: hidden;  /* Prevents horizontal scroll */
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 
   #landing .couple-names {
@@ -475,7 +480,7 @@ section {
   }
 }
 
-/* 5. Prevent zoom (fixed layout) */
+/* Prevent zoom (fixed layout) */
 html {
   touch-action: manipulation;
 }
