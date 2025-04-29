@@ -59,6 +59,7 @@ section {
   background: rgba(0, 0, 0, 0.5);
   padding: 40px 30px;
   border-radius: 20px;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   max-width: 90%;
 }
@@ -92,6 +93,15 @@ section {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+/* Map Styling */
+#map {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Recommendations Section */
@@ -144,7 +154,7 @@ a:hover {
 /* 📱 Mobile Responsive Design */
 @media (max-width: 768px) {
   #landing {
-    background-attachment: scroll; /* avoid flickering on mobile */
+    background-attachment: scroll;
     height: 100vh;
   }
 
