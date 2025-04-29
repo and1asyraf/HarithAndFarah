@@ -151,9 +151,7 @@ a:hover {
   text-decoration: underline;
 }
 
-
 /* 📱 Mobile Responsive Design */
-/*
 @media (max-width: 768px) {
   #landing {
     background-attachment: scroll;
@@ -226,6 +224,4 @@ a:hover {
   #recommendations li {
     font-size: 0.9rem;
   }
-}
-  */
-  
+} 
