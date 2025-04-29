@@ -352,7 +352,7 @@ section {
 
   #landing .couple-names {
     font-size: 4rem;
-    top: 10%; /* ⬆️ Higher placement */
+    top: 40%; /* ⬆️ Higher placement */
     padding: 0 10px;
   }
 
@@ -360,13 +360,13 @@ section {
     font-size: 1.8rem;
     padding: 0 15px;
     text-align: center;
-    margin-top: 10px; /* ⬆️ Higher position */
+    margin-top: 40px; /* ⬆️ Higher position */
   }
 
   #landing .overlay {
     padding: 10px 10px; /* Less padding for space */
     max-width: 95%;
-    margin-top: -30px; /* ⬆️ Pull content up */
+    margin-top: -70px; /* ⬆️ Pull content up */
   }
 
   #countdown {
@@ -380,7 +380,7 @@ section {
     position: absolute;
     top: 15px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Centralised Music button */
   }
 
   /* Invitation Section */
@@ -415,7 +415,7 @@ section {
   }
 
   #recommendations .h2-icon {
-    width: 40px;  /* ⬇️ Smaller Sabah icon */
+    width: 20px;  /* ⬇️ Smaller Sabah icon */
     height: auto;
     margin-bottom: 8px;
   }

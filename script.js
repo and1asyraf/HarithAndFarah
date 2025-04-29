@@ -69,55 +69,55 @@ window.onclick = e => { if (e.target == modal) modal.style.display = 'none'; }
 const places = [
   {
     title: "Nasi Lemak Antarabangsa",
-    img: "nasi-lemak.jpg",
+    img: "test.png",
     desc: "Famous for rich coconut rice and spicy sambal. Perfect breakfast choice!",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Yee Fung Laksa",
-    img: "yee-fung-laksa.jpg",
+    img: "test.png",
     desc: "The most beloved laksa in KK! Creamy, spicy, and full of flavor.",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Tanjung Aru Beach",
-    img: "tanjung-aru.jpg",
+    img: "test.png",
     desc: "Enjoy stunning sunsets, beach walks, and local street food by the sea.",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Kinabalu Park",
-    img: "kinabalu-park.jpg",
+    img: "test.png",
     desc: "A UNESCO Heritage Site and nature heaven. Breathtaking trails and cool air.",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Gaya Street Sunday Market",
-    img: "gaya-street.jpg",
+    img: "test.png",
     desc: "Local crafts, food, and lively culture every Sunday morning in town.",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Gaya Street Sunday Market",
-    img: "gaya-street.jpg",
+    img: "test.png",
     desc: "Local crafts, food, and lively culture every Sunday morning in town.",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Gaya Street Sunday Market",
-    img: "gaya-street.jpg",
+    img: "test.png",
     desc: "Local crafts, food, and lively culture every Sunday morning in town.",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Gaya Street Sunday Market",
-    img: "gaya-street.jpg",
+    img: "test.png",
     desc: "Local crafts, food, and lively culture every Sunday morning in town.",
     map: "https://goo.gl/maps/xyz"
   },
   {
     title: "Gaya Street Sunday Market",
-    img: "gaya-street.jpg",
+    img: "test.png",
     desc: "Local crafts, food, and lively culture every Sunday morning in town.",
     map: "https://goo.gl/maps/xyz"
   }
