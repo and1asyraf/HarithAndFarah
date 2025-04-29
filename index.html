@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>We're Getting Married!</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bg-music" autoplay loop hidden>
+    <source src="bg-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Music Control Button -->
+  <button id="music-toggle">Pause Music 🎵</button>
+
+  <!-- Landing Section -->
+  <section id="landing">
+    <div class="overlay" data-aos="fade-up">
+      <h1>We're Getting Married!</h1>
+      <h2 class="couple-names">Harith & Farah</h2>
+      <div id="countdown">
+        <span id="days">00</span> Days 
+        <span id="hours">00</span> Hours 
+        <span id="minutes">00</span> Minutes 
+        <span id="seconds">00</span> Seconds
+      </div>
+    </div>
+  </section>
+
+  <!-- Invitation Section -->
+  <section id="invitation" data-aos="fade-up">
+    <h2>Wedding Invitation</h2>
+    <p><strong>Date:</strong> 20th December 2025</p>
+    <p><strong>Location:</strong> The Magellan Sutera Resort, Kota Kinabalu</p>
+    <div id="map"></div> <!-- ADDED: Map container -->
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations" data-aos="fade-up">
+    <h2>Travelling to KK?</h2>
+    <p>Here are some places you must visit!</p>
+    <ul>
+      <li>🍛 Nasi Lemak Antarabangsa</li>
+      <li>🍜 Yee Fung Laksa</li>
+      <li>🏖️ Tanjung Aru Beach</li>
+      <li>🏔️ Kinabalu Park</li>
+      <li>🛍️ Gaya Street Sunday Market</li>
+    </ul>
+  </section>
+
+  <!-- Credit Section -->
+  <section id="credit" data-aos="zoom-in">
+    <img src="your-quirky-pic.jpg" alt="Little Brother Pic" class="quirky-pic">
+    <p>This invitation is proudly made by the bride’s little brother. Hire him please 🤪</p>
+  </section>
+
+  <!-- AOS JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Link to External JavaScript File -->
+  <script src="script.js"></script>
+
+  <!-- Google Maps API (Replace YOUR_API_KEY with your real API key) -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+}
+
+/* Music Button */
+#music-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #83adab;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#music-toggle:hover {
+  background-color: #28646f;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Landing Section */
+#landing {
+  background: url('Harith-Farah-Background.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+#landing .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  max-width: 90%;
+}
+
+#landing h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #edc55b;
+}
+
+#landing .couple-names {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Countdown */
+#countdown {
+  font-size: 1.5rem;
+}
+
+/* Invitation Section */
+#invitation {
+  background-color: #83adab;
+  color: #fff;
+}
+
+#invitation h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Recommendations Section */
+#recommendations {
+  background-color: #edc55b;
+  color: #575f12;
+}
+
+#recommendations ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#recommendations li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Credit Section */
+#credit {
+  background-color: #28646f;
+  color: #ffffff;
+  padding-bottom: 100px;
+}
+
+#credit .quirky-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#credit p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Mobile Responsive Design */
+@media (max-width: 768px) {
+  #landing {
+    background-attachment: scroll; /* avoid flickering on mobile */
+    height: 100vh;
+  }
+
+  #landing h1 {
+    font-size: 2.2rem;
+  }
+
+  #landing .couple-names {
+    font-size: 2rem;
+  }
+
+  #countdown {
+    font-size: 1.2rem;
+  }
+
+  #music-toggle {
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+
+  #invitation h2, #recommendations h2 {
+    font-size: 2rem;
+  }
+
+  #recommendations li {
+    font-size: 1rem;
+  }
+
+  #credit .quirky-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  #credit p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #landing h1 {
+    font-size: 1.8rem;
+  }
+
+  #landing .couple-names {
+    font-size: 1.6rem;
+  }
+
+  #countdown {
+    font-size: 1rem;
+  }
+
+  #music-toggle {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  #invitation h2, #recommendations h2 {
+    font-size: 1.8rem;
+  }
+
+  #recommendations li {
+    font-size: 0.9rem;
+  }
+}
