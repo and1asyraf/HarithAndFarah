@@ -25,9 +25,9 @@ body {
   color: #fff;
   font-family: 'Open Sans', sans-serif, bold;
   border: none;
-  padding: 15px 30px; /* Increase padding to make the button bigger */
-  border-radius: 35px; /* Increase border-radius for a rounder button */
-  font-size: 18px; /* Increase font size for better readability */
+  padding: 15px 30px;
+  border-radius: 35px;
+  font-size: 18px;
   cursor: pointer;
   z-index: 999;
 }
@@ -36,18 +36,16 @@ body {
   background-color: #28646f;
 }
 
-
 /* Sections */
 section {
   padding: 80px 20px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 /* Landing Section */
 #landing {
-  background: url('Harith-Farah-Background.png') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #ffffff;
   height: 100vh;
   position: relative;
 }
@@ -57,8 +55,8 @@ section {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
   padding: 40px 30px;
   border-radius: 20px;
   -webkit-backdrop-filter: blur(5px);
@@ -71,25 +69,22 @@ section {
   font-size: 3.2rem;
   margin-bottom: 10px;
   color: #edc55b;
-  text-shadow: 0 0 8px rgba(237, 197, 91, 0.8); /* Glow effect */
+  text-shadow: 0 0 8px rgba(237, 197, 91, 0.8);
 }
 
-/* Couple Names - moved outside and positioned */
 #landing .couple-names {
   position: absolute;
-  top: 25%; /* Adjusted to bring it higher */
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Dancing Script', cursive;
   font-size: 8.5rem;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
-  z-index: 2; /* Ensures visibility above other elements */
-  white-space: nowrap; /* Prevent line break */
-  max-width: 90%; /* Prevent overflow on small screens */
-
-  /* Glow effect */
+  color: #333;
+  z-index: 2;
+  white-space: nowrap;
+  max-width: 90%;
   text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -98,7 +93,6 @@ section {
     0 0 40px #ffffff;
 }
 
-
 /* Countdown */
 #countdown {
   font-size: 1.5rem;
@@ -106,18 +100,16 @@ section {
 
 /* Invitation Section */
 #invitation {
-  background: linear-gradient(to bottom right, #83adab, #a2c7c5); /* Soft gradient for depth */
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #333;
   padding: 60px 20px;
-  text-align: center;
 }
 
 #invitation h2 {
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
   margin-bottom: 20px;
-  color: #edc55b;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  color: #a18024;
   white-space: nowrap;
   letter-spacing: 2px;
 }
@@ -128,11 +120,8 @@ section {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
-  color: #f9f9f9;
-  opacity: 0.9;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle lift effect with shadow */
-  transform: translateY(-2px); /* Slight upward position to enhance the lift */
-  transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+  color: #555;
+  opacity: 0.95;
 }
 
 /* QR Code Section */
@@ -150,29 +139,27 @@ section {
 
 .location-button {
   display: inline-block;
-  margin-top: 20px; /* Increase top margin */
-  padding: 15px 30px; /* Increase padding for bigger button */
-  background-color: #ffffff;
-  color: #28646f;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #28646f;
+  color: #fff;
   font-weight: bold;
-  font-size: 1.5rem; /* Increase font size */
-  border-radius: 35px; /* Make the button more rounded */
+  font-size: 1.5rem;
+  border-radius: 35px;
   text-decoration: none;
-  transition: background 0.3s, color 0.3s;
-  border: 3px solid #28646f; /* Thicker border */
+  border: 3px solid #28646f;
 }
 
 .location-button:hover {
-  background-color: #28646f;
-  color: #fff;
-  text-decoration: none; /* Ensure no underline on hover */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Add shadow on hover */
+  background-color: #ffffff;
+  color: #28646f;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* Recommendations Section */
 #recommendations {
-  background-color: #edc55b;
-  color: #575f12;
+  background-color: #ffffff;
+  color: #333;
   padding: 40px 20px;
 }
 
@@ -182,77 +169,73 @@ section {
   color: #28646f;
   margin-bottom: 30px;
   letter-spacing: 2px;
-} 
+}
 
 .h2-icon {
-  width: 100px; /* Adjust the size of the icon */
+  width: 100px;
   height: auto;
-  margin-left: 10px; /* Adds space between the text and the icon */
-  transition: transform 0.3s ease; /* Optional transition for smooth effect */
+  margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
 .h2-icon:hover {
-  transform: scale(1.1); /* Slightly enlarge the icon when hovered */
+  transform: scale(1.1);
 }
 
-#recommendations p { 
+#recommendations p {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
-  color: #14353a;
-  opacity: 0.9;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle lift effect with shadow */
-  transform: translateY(-25px); /* Move it higher by adjusting this value */
-  transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+  color: #555;
+  opacity: 0.95;
 }
 
-
+/* Grid of Cards */
 #recommendations .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 20px; /* Reduce the gap between the cards */
-  max-width: 90%; /* Adjust the overall width of the grid container */
-  margin: 0 auto; /* Center the grid horizontally */
-  justify-items: center; /* Aligns items horizontally to the center */
-
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .card {
-  background-color: #fff; /* White background */
+  background-color: #fff;
   border-radius: 15px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ensures the card uses the full width of its grid column */
-  max-width: 300px; /* Maximum width for the card */
-  height: 400px; /* Fixed height for uniform card size */
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box; /* Ensures padding doesn't affect the card height */
+  box-sizing: border-box;
 }
 
 .card img {
   width: 100%;
-  height: 200px; /* Fixed height for images */
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 20px; /* Space between image and text */
+  margin-bottom: 20px;
 }
 
 .card h3 {
   font-size: 1.8rem;
-  color: #575f12;
+  color: #333;
   margin: 10px 0;
 }
 
 .card p {
   font-size: 1rem;
-  color: #575f12;
+  color: #555;
   margin-bottom: 20px;
-  flex-grow: 1; /* Ensures the paragraph content doesn't overflow */
+  flex-grow: 1;
 }
 
 .btn {
@@ -263,12 +246,13 @@ section {
   border-radius: 25px;
   text-decoration: none;
   transition: background-color 0.3s;
-  margin-top: auto; /* Pushes the button to the bottom of the card */
+  margin-top: auto;
 }
 
 .btn:hover {
   background-color: #edc55b;
-} 
+  color: #000;
+}
 
 /* Modal Section */
 .modal {
@@ -312,12 +296,10 @@ section {
   to { opacity: 1; transform: scale(1); }
 }
 
-
-
 /* Credit Section */
 #credit {
-  background-color: #28646f;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #333;
   padding-bottom: 100px;
 }
 
@@ -334,10 +316,28 @@ section {
   font-weight: bold;
 }
 
+/* Fixed layout wrapper */
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  transform-origin: top left;
+}
+
+/* Scale layout on small screens */
+@media screen and (max-width: 1080px) {
+  .wrapper {
+    transform: scale(calc(100vw / 1080));
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
 
 /* Mobile View */
+/*
 @media (max-width: 480px) {
-  /* 1. Use a different landing background image for mobile */
   #landing {
     background-image: url('Harith-Farah-MobileView.png');
     background-size: cover;
@@ -345,7 +345,6 @@ section {
     background-attachment: scroll;
   }
 
-  /* 2. Center the music toggle button */
   #music-toggle {
     position: absolute;
     top: 20px;
@@ -356,7 +355,6 @@ section {
     z-index: 999;
   }
 
-  /* 3. Grid Container for Recommendations: One card at a time */
   .grid-container {
     display: flex;
     flex-direction: column;
@@ -391,7 +389,6 @@ section {
     padding: 8px 16px;
   }
 
-  /* 4. Layout adjustments for fit within screen */
   body, html {
     margin: 0;
     padding: 0;
@@ -421,7 +418,6 @@ section {
     font-size: 0.95rem;
   }
 
-  /* Invitation Section */
   #invitation h2 {
     font-size: 2.2rem;
   }
@@ -432,12 +428,11 @@ section {
   }
 
   .h2-icon {
-    width: 50px; /* Reduce the size of the icon */
+    width: 50px; 
     height: auto;
-    margin-left: 5px; /* Adjust spacing if needed */
+    margin-left: 5px; 
   }
 
-  /* QR Code Section */
   .qr-image {
     width: 220px;
     height: 220px;
@@ -448,7 +443,6 @@ section {
     font-size: 1.1rem;
   }
 
-  /* Recommendations Header */
   #recommendations h2 {
     font-size: 2.2rem;
   }
@@ -458,7 +452,6 @@ section {
     transform: translateY(0);
   }
 
-  /* Modal */
   .modal-content {
     width: 90%;
     padding: 1.2rem;
@@ -470,7 +463,6 @@ section {
     font-size: 18px;
   }
 
-  /* Credit Section */
   #credit .quirky-pic {
     width: 220px;
     height: 220px;
@@ -483,7 +475,6 @@ section {
   }
 }
 
-/* Prevent zoom (fixed layout) */
 html {
   touch-action: manipulation;
 }
@@ -491,6 +482,6 @@ html {
 meta[name="viewport"] {
   content: "width=device-width, initial-scale=1";
 }
-
+*/
 
 
