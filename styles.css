@@ -44,8 +44,11 @@ section {
 /* Landing Section */
 #landing {
   background: url('Harith-Farah-Background.png') no-repeat center center;
-  background-size: cover;
+  background-size: contain; /* <-- changed from cover to contain */
+  background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
+  background-color: #ffffff;
   height: 100vh;
   position: relative;
 }
@@ -155,6 +158,9 @@ a:hover {
 @media (max-width: 768px) {
   #landing {
     background-attachment: scroll;
+    background-size: contain; /* <-- Added to fix mobile view */
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100vh;
   }
 
