@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>We're Getting Married!</title>
+  <title>Harith & Farah Wedding Invitation Website</title>
 
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="styles.css">
@@ -27,9 +27,9 @@
 
   <!-- Landing Section -->
   <section id="landing">
+    <h2 class="couple-names">Harith & Farah</h2> <!-- Moved outside overlay -->
     <div class="overlay" data-aos="fade-up">
       <h1>We're Getting Married!</h1>
-      <h2 class="couple-names">Harith & Farah</h2>
       <div id="countdown">
         <span id="days">00</span> Days 
         <span id="hours">00</span> Hours 
@@ -44,25 +44,86 @@
     <h2>Wedding Invitation</h2>
     <p><strong>Date:</strong> 20th December 2025</p>
     <p><strong>Location:</strong> The Magellan Sutera Resort, Kota Kinabalu</p>
-    <div id="map"></div> <!-- Map container -->
+    
+    <!-- QR code display -->
+    <div id="qr-container">
+      <img src="qr-code.png" alt="Scan to get location" class="qr-image">
+      <br>
+      <a href="https://goo.gl/maps/kbEb8vD2m8VzA69H7" target="_blank" rel="noopener" class="location-button">📍 Get Location</a>
+    </div>
   </section>
 
   <!-- Recommendations Section -->
   <section id="recommendations" data-aos="fade-up">
-    <h2>Travelling to KK?</h2>
-    <p>Here are some places you must visit!</p>
-    <ul>
-      <li>🍛 Nasi Lemak Antarabangsa</li>
-      <li>🍜 Yee Fung Laksa</li>
-      <li>🏖️ Tanjung Aru Beach</li>
-      <li>🏔️ Kinabalu Park</li>
-      <li>🛍️ Gaya Street Sunday Market</li>
-    </ul>
+    <h2>
+      For Friends and Family Travelling to KK
+      <img src="sabah-icon.png" alt="Icon" class="h2-icon">
+    </h2>
+    <p>Here are some of our go-to places in home</p>
+    <div class="grid-container">
+      <div class="card">
+        <img src="nasi-lemak.jpg" alt="Nasi Lemak Antarabangsa">
+        <h3>Nasi Lemak Antarabangsa</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="yee-fung-laksa.jpg" alt="Yee Fung Laksa">
+        <h3>Yee Fung Laksa</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="tanjung-aru.jpg" alt="Tanjung Aru Beach">
+        <h3>Tanjung Aru Beach</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="kinabalu-park.jpg" alt="Kinabalu Park">
+        <h3>Kinabalu Park</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="gaya-street.jpg" alt="Gaya Street Sunday Market">
+        <h3>Gaya Street Sunday Market</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="gaya-street.jpg" alt="Gaya Street Sunday Market">
+        <h3>Gaya Street Sunday Market</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="gaya-street.jpg" alt="Gaya Street Sunday Market">
+        <h3>Gaya Street Sunday Market</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="gaya-street.jpg" alt="Gaya Street Sunday Market">
+        <h3>Gaya Street Sunday Market</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <div class="card">
+        <img src="gaya-street.jpg" alt="Gaya Street Sunday Market">
+        <h3>Gaya Street Sunday Market</h3>
+        <a href="https://goo.gl/maps/xyz" target="_blank" rel="noopener" class="btn">Bring Me Here</a>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
   </section>
+
+    <!-- Modal Popup -->
+    <div id="placeModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modalTitle">Place Title</h3>
+        <img id="modalImage" src="" alt="">
+        <p id="modalDescription">Detailed description goes here...</p>
+        <a id="modalMapLink" href="#" target="_blank" class="btn">Bring Me Here</a>
+      </div>
+    </div> 
 
   <!-- Credit Section -->
   <section id="credit" data-aos="zoom-in">
-    <img src="your-quirky-pic.jpg" alt="Little Brother Pic" class="quirky-pic">
+    <img src="my-pic.jpg" alt="Little Brother Pic" class="quirky-pic">
     <p>This invitation is proudly made by the bride’s little brother. Hire him please 🤪</p>
   </section>
 
@@ -74,9 +135,6 @@
 
   <!-- Link to External JavaScript File -->
   <script src="script.js"></script>
-
-  <!-- Google Maps API (Replace YOUR_API_KEY with your real API key) -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSwIpS38SHbkL18yR0z67s0RVZUdN7Smg&callback=initMap" async defer></script>
 
 </body>
 </html>

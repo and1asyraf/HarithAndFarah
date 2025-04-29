@@ -21,12 +21,13 @@ body {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #83adab;
+  background-color: #a18024;
   color: #fff;
+  font-family: 'Open Sans', sans-serif, bold;
   border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 16px;
+  padding: 15px 30px; /* Increase padding to make the button bigger */
+  border-radius: 35px; /* Increase border-radius for a rounder button */
+  font-size: 18px; /* Increase font size for better readability */
   cursor: pointer;
   z-index: 999;
 }
@@ -34,6 +35,7 @@ body {
 #music-toggle:hover {
   background-color: #28646f;
 }
+
 
 /* Sections */
 section {
@@ -52,7 +54,7 @@ section {
 
 #landing .overlay {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -66,17 +68,36 @@ section {
 
 #landing h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 10px;
   color: #edc55b;
+  text-shadow: 0 0 8px rgba(237, 197, 91, 0.8); /* Glow effect */
 }
 
+/* Couple Names - moved outside and positioned */
 #landing .couple-names {
+  position: absolute;
+  top: 25%; /* Adjusted to bring it higher */
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
+  font-size: 8.5rem;
+  font-weight: bold;
+  text-align: center;
   color: #ffffff;
-  margin-bottom: 20px;
+  z-index: 2; /* Ensures visibility above other elements */
+  white-space: nowrap; /* Prevent line break */
+  max-width: 90%; /* Prevent overflow on small screens */
+
+  /* Glow effect */
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #ebe1c6,
+    0 0 30px #eabfbf,
+    0 0 40px #ffffff;
 }
+
 
 /* Countdown */
 #countdown {
@@ -85,40 +106,213 @@ section {
 
 /* Invitation Section */
 #invitation {
-  background-color: #83adab;
-  color: #fff;
+  background: linear-gradient(to bottom right, #83adab, #a2c7c5); /* Soft gradient for depth */
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 #invitation h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   margin-bottom: 20px;
+  color: #edc55b;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  white-space: nowrap;
+  letter-spacing: 2px;
 }
 
-/* Map Styling */
-#map {
-  width: 100%;
-  height: 400px;
-  margin-top: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+#invitation p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #f9f9f9;
+  opacity: 0.9;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle lift effect with shadow */
+  transform: translateY(-2px); /* Slight upward position to enhance the lift */
+  transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* QR Code Section */
+#qr-container {
+  margin-top: 30px;
+}
+
+.qr-image {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.location-button {
+  display: inline-block;
+  margin-top: 20px; /* Increase top margin */
+  padding: 15px 30px; /* Increase padding for bigger button */
+  background-color: #ffffff;
+  color: #28646f;
+  font-weight: bold;
+  font-size: 1.5rem; /* Increase font size */
+  border-radius: 35px; /* Make the button more rounded */
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  border: 3px solid #28646f; /* Thicker border */
+}
+
+.location-button:hover {
+  background-color: #28646f;
+  color: #fff;
+  text-decoration: none; /* Ensure no underline on hover */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Add shadow on hover */
 }
 
 /* Recommendations Section */
 #recommendations {
   background-color: #edc55b;
   color: #575f12;
+  padding: 40px 20px;
 }
 
-#recommendations ul {
-  list-style: none;
-  margin-top: 20px;
+#recommendations h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  color: #28646f;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+} 
+
+.h2-icon {
+  width: 100px; /* Adjust the size of the icon */
+  height: auto;
+  margin-left: 10px; /* Adds space between the text and the icon */
+  transition: transform 0.3s ease; /* Optional transition for smooth effect */
 }
 
-#recommendations li {
+.h2-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon when hovered */
+}
+
+#recommendations p { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #14353a;
+  opacity: 0.9;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle lift effect with shadow */
+  transform: translateY(-25px); /* Move it higher by adjusting this value */
+  transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+
+#recommendations .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* Reduce the gap between the cards */
+  max-width: 90%; /* Adjust the overall width of the grid container */
+  margin: 0 auto; /* Center the grid horizontally */
+  justify-items: center; /* Aligns items horizontally to the center */
+
+}
+
+.card {
+  background-color: #fff; /* White background */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensures the card uses the full width of its grid column */
+  max-width: 300px; /* Maximum width for the card */
+  height: 400px; /* Fixed height for uniform card size */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box; /* Ensures padding doesn't affect the card height */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #575f12;
   margin: 10px 0;
-  font-size: 1.2rem;
 }
+
+.card p {
+  font-size: 1rem;
+  color: #575f12;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Ensures the paragraph content doesn't overflow */
+}
+
+.btn {
+  background-color: #28646f;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+.btn:hover {
+  background-color: #edc55b;
+} 
+
+/* Modal Section */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px; top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
 
 /* Credit Section */
 #credit {
@@ -128,8 +322,8 @@ section {
 }
 
 #credit .quirky-pic {
-  width: 150px;
-  height: 150px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -140,103 +334,124 @@ section {
   font-weight: bold;
 }
 
-/* Links */
-a {
-  color: #ff6b6b;
-  text-decoration: none;
-  font-weight: bold;
-}
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* 📱 Mobile Responsive Design */
-@media (max-width: 768px) {
-  #landing {
-    background-attachment: scroll;
-    height: 100vh;
+/* Mobile View */
+@media (max-width: 480px) {
+  /* Grid Container (e.g., Recommendations) */
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
-  #landing h1 {
-    font-size: 2.2rem;
+  /* Landing Section */
+  #landing {
+    background-attachment: scroll;
   }
 
   #landing .couple-names {
-    font-size: 2rem;
+    font-size: 4rem;
+    top: 20%;
+    padding: 0 10px;
+  }
+
+  #landing h1 {
+    font-size: 1.8rem;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  #landing .overlay {
+    padding: 20px 15px;
+    max-width: 95%;
   }
 
   #countdown {
+    font-size: 1rem;
+  }
+
+  /* Music Toggle Button */
+  #music-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    top: 15px;
+    right: 15px;
+  }
+
+  /* Invitation Section */
+  #invitation h2 {
+    font-size: 2.5rem;
+  }
+
+  #invitation p {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  /* QR Code Section */
+  .qr-image {
+    width: 240px;
+    height: 240px;
+  }
+
+  .location-button {
+    padding: 12px 20px;
     font-size: 1.2rem;
   }
 
-  #music-toggle {
+  /* Recommendations Section */
+  #recommendations h2 {
+    font-size: 2.5rem;
+  }
+
+  #recommendations p {
+    font-size: 1.2rem;
+    transform: translateY(0); /* Remove vertical shift */
+  }
+
+  .card {
+    height: auto;
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .close-btn {
     top: 10px;
     right: 10px;
-    padding: 8px 16px;
-    font-size: 14px;
+    font-size: 20px;
   }
 
-  section {
-    padding: 60px 15px;
-  }
-
-  #invitation h2, #recommendations h2 {
-    font-size: 2rem;
-  }
-
-  #recommendations li {
-    font-size: 1rem;
-  }
-
+  /* Credit Section */
   #credit .quirky-pic {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
   }
 
   #credit p {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #landing {
-    background-image: url('Harith-Farah-MobileView.png'); /* Mobile Background */
-    background-attachment: scroll; /* Remove fixed attachment on mobile */
-    height: 100vh;
-  }
-
-  #landing h1 {
-    font-size: 1.8rem; /* Even smaller for very small screens */
-  }
-
-  #landing .couple-names {
-    font-size: 1.6rem;
-  }
-
-  #countdown {
-    font-size: 1rem;
-  }
-
-  #music-toggle {
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-
-  #invitation h2, #recommendations h2 {
-    font-size: 1.8rem;
-  }
-
-  #recommendations li {
-    font-size: 0.9rem;
-  }
-
-  #credit .quirky-pic {
-    width: 100px; /* Smaller profile picture for very small screens */
-    height: 100px;
-  }
-
-  #credit p {
-    font-size: 0.9rem; /* Smaller text for tight space */
+    padding: 0 10px;
+    text-align: center;
   }
 }
