@@ -54,6 +54,28 @@ musicToggle.addEventListener("click", () => {
 });
 
 // =====================
+// Music Scroll Animation
+// =====================
+let lastScrollTop = 0; // To keep track of the last scroll position
+
+window.addEventListener('scroll', function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  // If the user scrolls down, hide the button
+  if (currentScroll > lastScrollTop) {
+    document.getElementById('music-toggle').classList.add('hidden');
+  } else {
+    // If the user scrolls up, show the button
+    document.getElementById('music-toggle').classList.remove('hidden');
+  }
+
+  // Update last scroll position
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+
+
+// =====================
 // Modal Logic for Places
 // =====================
 const modal = document.getElementById('placeModal');
