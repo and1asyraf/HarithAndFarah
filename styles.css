@@ -18,7 +18,7 @@ body {
 }
 
 .fixed-wrapper {
-  width: 1280px;         /* or 1024px, etc. */
+  width: 1505px;         /* or 1024px, etc. */
   margin: 0 auto;         /* center on large screens */
 }
 
@@ -66,11 +66,13 @@ section {
 
 /* Landing Section */
 #landing {
+  position: relative;
+  height: 800px; /* Changed from 100vh for consistency */
   background: url('Harith-Farah-Background.png') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
-  position: relative;
+  color: #FFFFF0; /* Matches #invitation text color */
+  padding: 60px 20px; /* Matches #invitation padding */
 }
 
 #landing .overlay {
@@ -184,6 +186,7 @@ section {
   color: #FFFFF0;
   padding: 60px 20px;
 }
+
 .invitation-box {
   position: relative;
   width: 100%;
@@ -492,148 +495,150 @@ section {
 
 /* ---------- Responsive Design ---------- */
 
-/* 1. Large Tablets and Small Laptops */
-@media (max-width: 1280px) {
-  #landing .couple-names {
-    font-size: 6.5rem;
+/* 
+/* 1. Large Tablets and Small Laptops 
+  @media (max-width: 1280px) {
+    #landing .couple-names {
+      font-size: 6.5rem;
+    }
+
+    .blessing {
+      font-size: 4.2rem;
+    }
+
+    .invitation-title,
+    .itinery-title {
+      font-size: 3.5rem;
+    }
+
+    .invitation-details p,
+    .itinery-details p {
+      font-size: 1.5rem;
+    }
+
+    .qr-heading {
+      font-size: 3rem;
+    }
+
+    .location-button {
+      font-size: 1.3rem;
+      padding: 12px 24px;
+    }
   }
 
-  .blessing {
-    font-size: 4.2rem;
+  /* 2. Tablets and Medium Devices 
+  @media (max-width: 768px) {
+    #landing .couple-names {
+      font-size: 4.5rem;
+      top: 25%;
+    }
+
+    #landing h1 {
+      font-size: 2.2rem;
+    }
+
+    .blessing {
+      font-size: 3.5rem;
+    }
+
+    .invitation-title,
+    .itinery-title {
+      font-size: 2.8rem;
+      top: 15%;
+    }
+
+    .invitation-details,
+    .itinery-details {
+      top: 55%;
+      right: 5%;
+    }
+
+    .invitation-details p,
+    .itinery-details p {
+      font-size: 1.3rem;
+    }
+
+    .qr-heading {
+      font-size: 2.5rem;
+    }
+
+    .qr-image {
+      width: 240px;
+      height: 240px;
+    }
+
+    .location-button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+
+    .itinery-item {
+      font-size: 1.3rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .itinery-time {
+      min-width: 80px;
+    }
   }
 
-  .invitation-title,
-  .itinery-title {
-    font-size: 3.5rem;
-  }
+  /* 3. Mobile Devices 
+  @media (max-width: 600px) {
+    #music-toggle {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
 
-  .invitation-details p,
-  .itinery-details p {
-    font-size: 1.5rem;
-  }
+    #landing .couple-names {
+      font-size: 3.2rem;
+      top: 30%;
+    }
 
-  .qr-heading {
-    font-size: 3rem;
-  }
+    #landing h1 {
+      font-size: 1.8rem;
+    }
 
-  .location-button {
-    font-size: 1.3rem;
-    padding: 12px 24px;
-  }
-}
+    .blessing {
+      font-size: 2.8rem;
+    }
 
-/* 2. Tablets and Medium Devices */
-@media (max-width: 768px) {
-  #landing .couple-names {
-    font-size: 4.5rem;
-    top: 25%;
-  }
+    .invitation-title,
+    .itinery-title {
+      font-size: 2.2rem;
+      top: 18%;
+      left: 5%;
+    }
 
-  #landing h1 {
-    font-size: 2.2rem;
-  }
+    .invitation-details,
+    .itinery-details {
+      position: static;
+      transform: none;
+      text-align: center;
+      margin-top: 40px;
+    }
 
-  .blessing {
-    font-size: 3.5rem;
-  }
+    .invitation-details p,
+    .itinery-details p {
+      font-size: 1.1rem;
+    }
 
-  .invitation-title,
-  .itinery-title {
-    font-size: 2.8rem;
-    top: 15%;
-  }
+    .qr-heading {
+      font-size: 2rem;
+    }
 
-  .invitation-details,
-  .itinery-details {
-    top: 55%;
-    right: 5%;
-  }
+    .qr-image {
+      width: 200px;
+      height: 200px;
+    }
 
-  .invitation-details p,
-  .itinery-details p {
-    font-size: 1.3rem;
-  }
+    .location-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
 
-  .qr-heading {
-    font-size: 2.5rem;
+    .itinery-item {
+      font-size: 1.1rem;
+    }
   }
-
-  .qr-image {
-    width: 240px;
-    height: 240px;
-  }
-
-  .location-button {
-    font-size: 1.2rem;
-    padding: 10px 20px;
-  }
-
-  .itinery-item {
-    font-size: 1.3rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .itinery-time {
-    min-width: 80px;
-  }
-}
-
-/* 3. Mobile Devices */
-@media (max-width: 600px) {
-  #music-toggle {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-
-  #landing .couple-names {
-    font-size: 3.2rem;
-    top: 30%;
-  }
-
-  #landing h1 {
-    font-size: 1.8rem;
-  }
-
-  .blessing {
-    font-size: 2.8rem;
-  }
-
-  .invitation-title,
-  .itinery-title {
-    font-size: 2.2rem;
-    top: 18%;
-    left: 5%;
-  }
-
-  .invitation-details,
-  .itinery-details {
-    position: static;
-    transform: none;
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  .invitation-details p,
-  .itinery-details p {
-    font-size: 1.1rem;
-  }
-
-  .qr-heading {
-    font-size: 2rem;
-  }
-
-  .qr-image {
-    width: 200px;
-    height: 200px;
-  }
-
-  .location-button {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-
-  .itinery-item {
-    font-size: 1.1rem;
-  }
-}
+*/ 
