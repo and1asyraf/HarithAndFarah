@@ -369,10 +369,10 @@ section {
 
 /* Recommendations Section */
 #recommendations {
-  background: url('section-background4.png') no-repeat center center;
-  background-size: cover;
-  padding: 40px 20px;
-} 
+  background: url('Section-Background4.png') no-repeat center center;
+  background-size: cover; 
+  padding: 40px 20px; 
+}  
 
 #recommendations h5 {
   font-family: 'Playfair Display', serif;
