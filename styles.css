@@ -1,4 +1,9 @@
 /* General Reset */
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,11 +78,8 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background: rgba(0, 0, 0, 0.5);
   padding: 40px 30px;
   border-radius: 20px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
   max-width: 90%;
 }
 
@@ -92,13 +94,16 @@ section {
 /* Couple Names - moved outside and positioned */
 #landing .couple-names {
   position: absolute;
-  top: 15%; /* Adjusted to bring it higher */
+  top: 20%; /* Adjusted to bring it higher */
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Dancing Script', cursive;
+  font-family: "EB Garamond";
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
   font-size: 8.5rem;
-  font-weight: bold;
   text-align: center;
+  text-transform: italic;
   color: #ffffff;
   z-index: 2; /* Ensures visibility above other elements */
   white-space: nowrap; /* Prevent line break */
@@ -285,6 +290,84 @@ section {
   -webkit-background-clip: text; /* Clip the background gradient to text */
   background-clip: text; /* Clip the background gradient to text */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+/* Itinery Section */ 
+#itinery {
+  position: relative;
+  height: 800px;
+  background: url('Section-Background5.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFFFF0;
+  padding: 60px 20px;
+}
+.itinery-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itinery-title {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform: translateY(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  color: #ffffff; /* Changed to white */
+  text-shadow: 
+    1px 1px 6px rgba(0, 0, 0, 0.4),   /* Soft shadow */
+    0 0 10px rgba(255, 255, 255, 0.6), /* White glow */
+    0 0 20px rgba(255, 255, 255, 0.4), /* Stronger white glow */
+    0 0 30px rgba(255, 255, 255, 0.2); /* Intense white glow */
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+
+.itinery-details {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.itinery-details p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: #ffffff; /* Changed to white */
+  opacity: 0.9;
+  text-shadow: 
+    2px 2px 10px rgba(0, 0, 0, 0.1),  /* Soft shadow */
+    0 4px 6px rgba(0, 0, 0, 0.2),    /* Shadow */
+    0 0 10px rgba(255, 255, 255, 0.6), /* White glow */
+    0 0 20px rgba(255, 255, 255, 0.4), /* Stronger white glow */
+    0 0 30px rgba(255, 255, 255, 0.2); /* Intense white glow */
+}
+
+
+.itinery-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+.itinery-time {
+  min-width: 100px;
+  font-weight: bold;
+  color: #edc55b;
+  text-shadow: 0 0 6px rgba(255,255,255,0.3);
+}
+
+.itinery-event {
+  flex: 1;
 }
 
 
