@@ -1,9 +1,4 @@
 /* General Reset */
-.wrapper {
-  width: 1515px;
-  margin: 0 auto;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +14,12 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #ffffff;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.fixed-wrapper {
+  width: 1280px;         /* or 1024px, etc. */
+  margin: 0 auto;         /* center on large screens */
 }
 
 #music-toggle {
@@ -67,7 +68,7 @@ section {
 #landing {
   background: url('Harith-Farah-Background.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
 }
@@ -128,7 +129,7 @@ section {
 #sayings {
   background: url('Section-Background1.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   padding: 40px 20px;
   height: 500px;
   display: flex;
@@ -179,7 +180,7 @@ section {
   height: 800px;
   background: url('Section-Background2.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: #FFFFF0;
   padding: 60px 20px;
 }
@@ -240,7 +241,7 @@ section {
 #qr-section {
   background: url('Section-Background3.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   text-align: center;
   padding: 50px 20px;
 }
@@ -298,7 +299,7 @@ section {
   height: 800px;
   background: url('Section-Background5.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: #FFFFF0;
   padding: 60px 20px;
 }
@@ -376,22 +377,38 @@ section {
 #recommendations {
   background: url('section-background4.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: #575f12;
   padding: 40px 20px;
 }
 
-#recommendations h2 {
+#recommendations h5 {
   font-family: 'Playfair Display', serif;
+  font-size: 2.5rem; /* Smaller size compared to h2 */
+  color: #ffffff; /* White color */
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.5); /* White glow effect */
+}
+
+#recommendations h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem; /* Smaller size compared to h2 */
+  color: #ffffff; /* White color */
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.5); /* White glow effect */
+} 
+
+#recommendations h2 {
+  font-family: 'Dancing Script', cursive;
+  transform: translateY(-5px); /* Move it higher */
   font-size: 4.5rem;
   color: #ffffff; /* Changed to white */
-  margin-bottom: 30px;
   letter-spacing: 2px;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.5); /* White glow effect */
 }
 
 .h2-icon {
-  width: 100px; /* Adjust the size of the icon */
+  width: 60px; /* Adjust the size of the icon */
   height: auto;
   margin-left: 10px; /* Adds space between the text and the icon */
   transition: transform 0.3s ease; /* Optional transition for smooth effect */
@@ -407,14 +424,14 @@ section {
   font-size: 2rem;
   max-width: 800px;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 2.8;
   color: transparent;
   background: linear-gradient(to left, #ffffff, #d6d6d6); /* White gradient text */
   -webkit-background-clip: text; /* Ensures gradient is applied to text only */
   background-clip: text;
   opacity: 0.9;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3); /* Glowing white effect */
-  transform: translateY(-25px); /* Move it higher */
+  transform: translateY(25px); /* Move it higher */
   transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
   word-wrap: break-word; /* Ensure long text breaks and wraps */
 }
@@ -453,7 +470,7 @@ section {
 #credit {
   background: url('Section-Background5.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: #DCDCDC;
   padding-bottom: 100px;
 }
@@ -471,4 +488,152 @@ section {
   font-weight: bold;
   color: #fff; /* Ensure text is white */
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3); /* Glowing effect */
+} 
+
+/* ---------- Responsive Design ---------- */
+
+/* 1. Large Tablets and Small Laptops */
+@media (max-width: 1280px) {
+  #landing .couple-names {
+    font-size: 6.5rem;
+  }
+
+  .blessing {
+    font-size: 4.2rem;
+  }
+
+  .invitation-title,
+  .itinery-title {
+    font-size: 3.5rem;
+  }
+
+  .invitation-details p,
+  .itinery-details p {
+    font-size: 1.5rem;
+  }
+
+  .qr-heading {
+    font-size: 3rem;
+  }
+
+  .location-button {
+    font-size: 1.3rem;
+    padding: 12px 24px;
+  }
+}
+
+/* 2. Tablets and Medium Devices */
+@media (max-width: 768px) {
+  #landing .couple-names {
+    font-size: 4.5rem;
+    top: 25%;
+  }
+
+  #landing h1 {
+    font-size: 2.2rem;
+  }
+
+  .blessing {
+    font-size: 3.5rem;
+  }
+
+  .invitation-title,
+  .itinery-title {
+    font-size: 2.8rem;
+    top: 15%;
+  }
+
+  .invitation-details,
+  .itinery-details {
+    top: 55%;
+    right: 5%;
+  }
+
+  .invitation-details p,
+  .itinery-details p {
+    font-size: 1.3rem;
+  }
+
+  .qr-heading {
+    font-size: 2.5rem;
+  }
+
+  .qr-image {
+    width: 240px;
+    height: 240px;
+  }
+
+  .location-button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .itinery-item {
+    font-size: 1.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .itinery-time {
+    min-width: 80px;
+  }
+}
+
+/* 3. Mobile Devices */
+@media (max-width: 600px) {
+  #music-toggle {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  #landing .couple-names {
+    font-size: 3.2rem;
+    top: 30%;
+  }
+
+  #landing h1 {
+    font-size: 1.8rem;
+  }
+
+  .blessing {
+    font-size: 2.8rem;
+  }
+
+  .invitation-title,
+  .itinery-title {
+    font-size: 2.2rem;
+    top: 18%;
+    left: 5%;
+  }
+
+  .invitation-details,
+  .itinery-details {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .invitation-details p,
+  .itinery-details p {
+    font-size: 1.1rem;
+  }
+
+  .qr-heading {
+    font-size: 2rem;
+  }
+
+  .qr-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .location-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .itinery-item {
+    font-size: 1.1rem;
+  }
 }
