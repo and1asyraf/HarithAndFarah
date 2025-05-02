@@ -33,9 +33,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   border: none;
-  padding: 15px 30px;
-  border-radius: 35px;
-  font-size: 18px;
+  padding: 25px 50px; /* Increased padding */
+  border-radius: 50px; /* Slightly more rounded corners */
+  font-size: 24px; /* Increased font size */
   cursor: pointer;
   z-index: 999;
   transition: opacity 0.3s ease; /* Smooth transition */
@@ -128,10 +128,8 @@ section {
 #sayings {
   background: url('Section-Background1.png') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   padding: 40px 20px;
   height: 500px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -468,7 +466,7 @@ section {
 #credit .quirky-pic {
   width: 450px;
   height: 450px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -502,6 +500,7 @@ section {
 @media (max-width: 600px) {
   #landing {
     background: url('Harith-Farah-MobileView.png');
+    background-size: cover;
   }
   #music-toggle {
     font-size: 22px;
