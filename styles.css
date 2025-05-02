@@ -69,7 +69,7 @@ section {
   position: relative;
   height: 800px; /* Changed from 100vh for consistency */
   background: url('Harith-Farah-Background.png') no-repeat center center;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -132,7 +132,7 @@ section {
 /* Saying Section */
 #sayings {
   background: url('Section-Background1.png') no-repeat center center;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -185,7 +185,7 @@ section {
   position: relative;
   height: 800px;
   background: url('Section-Background2.png') no-repeat center center;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -249,7 +249,7 @@ section {
 /* QR Code Section */
 #qr-section {
   background: url('Section-Background3.png') no-repeat center center;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -309,7 +309,7 @@ section {
   position: relative;
   height: 800px;
   background: url('Section-Background5.png') no-repeat center center;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -389,7 +389,7 @@ section {
 /* Recommendations Section */
 #recommendations {
   background: url('section-background4.png') no-repeat center center;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -484,7 +484,7 @@ section {
 /* Credit Section */
 #credit {
   background: url('Section-Background5.png') no-repeat center center;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
