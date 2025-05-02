@@ -69,12 +69,7 @@ section {
   position: relative;
   height: 800px; /* Changed from 100vh for consistency */
   background: url('Harith-Farah-Background.png') no-repeat center center;
-  background-color: #000; /* or a color that blends with your image */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  background-attachment: fixed;
-  color: #FFFFF0; /* Matches #invitation text color */
+  background-size: cover;
   padding: 60px 20px; /* Matches #invitation padding */
 }
 
@@ -97,7 +92,6 @@ section {
   text-shadow: 0 0 8px rgba(237, 197, 91, 0.8); /* Glow effect */
 }
 
-/* Couple Names - moved outside and positioned */
 #landing .couple-names {
   position: absolute;
   top: 20%; /* Adjusted to bring it higher */
@@ -133,11 +127,7 @@ section {
 /* Saying Section */
 #sayings {
   background: url('Section-Background1.png') no-repeat center center;
-  background-color: #000; /* or a color that blends with your image */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  
+  background-size: cover;
   background-attachment: fixed;
   padding: 40px 20px;
   height: 500px;
@@ -188,12 +178,7 @@ section {
   position: relative;
   height: 800px;
   background: url('Section-Background2.png') no-repeat center center;
-  background-color: #000; /* or a color that blends with your image */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  background-attachment: fixed;
-  color: #FFFFF0;
+  background-size: cover;
   padding: 60px 20px;
 }
 
@@ -253,12 +238,7 @@ section {
 /* QR Code Section */
 #qr-section {
   background: url('Section-Background3.png') no-repeat center center;
-  background-color: #000; /* or a color that blends with your image */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  background-attachment: fixed;
-  text-align: center;
+  background-size: cover;
   padding: 50px 20px;
 }
 
@@ -314,20 +294,14 @@ section {
   position: relative;
   height: 800px;
   background: url('Section-Background5.png') no-repeat center center;
-  background-color: #000; /* or a color that blends with your image */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  
-  background-attachment: fixed;
-  color: #FFFFF0;
+  background-size: cover;
   padding: 60px 20px;
 }
 .itinery-box {
   position: relative;
   width: 100%;
   height: 100%;
-}
+} 
 
 .itinery-title {
   position: absolute;
@@ -396,14 +370,9 @@ section {
 /* Recommendations Section */
 #recommendations {
   background: url('section-background4.png') no-repeat center center;
-  background-color: #000; /* or a color that blends with your image */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  background-attachment: fixed;
-  color: #575f12;
+  background-size: cover;
   padding: 40px 20px;
-}
+} 
 
 #recommendations h5 {
   font-family: 'Playfair Display', serif;
@@ -492,20 +461,14 @@ section {
 /* Credit Section */
 #credit {
   background: url('Section-Background5.png') no-repeat center center;
-  background-color: #000; /* or a color that blends with your image */
-  background-image: url('your-image.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  background-attachment: fixed;
-  color: #DCDCDC;
+  background-size:  cover;
   padding-bottom: 100px;
 }
 
 #credit .quirky-pic {
   width: 450px;
   height: 450px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -517,152 +480,43 @@ section {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3); /* Glowing effect */
 } 
 
-/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  #landing {
+    background: url('Harith-Farah-MobileView.png');
+  }
+  #music-toggle {
+    font-size: 22px;
+    padding: 20px 40px;
+  }
+  #landing,
+  #sayings,
+  #invitation,
+  #qr-section,
+  #itinery,
+  #recommendations,
+  #credit {
+    background-attachment: scroll;
+  }
+} 
 
-/* 
-/* 1. Large Tablets and Small Laptops 
-  @media (max-width: 1280px) {
-    #landing .couple-names {
-      font-size: 6.5rem;
-    }
-
-    .blessing {
-      font-size: 4.2rem;
-    }
-
-    .invitation-title,
-    .itinery-title {
-      font-size: 3.5rem;
-    }
-
-    .invitation-details p,
-    .itinery-details p {
-      font-size: 1.5rem;
-    }
-
-    .qr-heading {
-      font-size: 3rem;
-    }
-
-    .location-button {
-      font-size: 1.3rem;
-      padding: 12px 24px;
-    }
+@media (max-width: 600px) {
+  #landing {
+    background: url('Harith-Farah-MobileView.png');
+  }
+  #music-toggle {
+    font-size: 22px;
+    padding: 20px 40px;
+  }
+  #landing,
+  #sayings,
+  #invitation,
+  #qr-section,
+  #itinery,
+  #recommendations,
+  #credit {
+    background-attachment: scroll;
   }
 
-  /* 2. Tablets and Medium Devices 
-  @media (max-width: 768px) {
-    #landing .couple-names {
-      font-size: 4.5rem;
-      top: 25%;
-    }
 
-    #landing h1 {
-      font-size: 2.2rem;
-    }
+}
 
-    .blessing {
-      font-size: 3.5rem;
-    }
-
-    .invitation-title,
-    .itinery-title {
-      font-size: 2.8rem;
-      top: 15%;
-    }
-
-    .invitation-details,
-    .itinery-details {
-      top: 55%;
-      right: 5%;
-    }
-
-    .invitation-details p,
-    .itinery-details p {
-      font-size: 1.3rem;
-    }
-
-    .qr-heading {
-      font-size: 2.5rem;
-    }
-
-    .qr-image {
-      width: 240px;
-      height: 240px;
-    }
-
-    .location-button {
-      font-size: 1.2rem;
-      padding: 10px 20px;
-    }
-
-    .itinery-item {
-      font-size: 1.3rem;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .itinery-time {
-      min-width: 80px;
-    }
-  }
-
-  /* 3. Mobile Devices 
-  @media (max-width: 600px) {
-    #music-toggle {
-      font-size: 14px;
-      padding: 10px 20px;
-    }
-
-    #landing .couple-names {
-      font-size: 3.2rem;
-      top: 30%;
-    }
-
-    #landing h1 {
-      font-size: 1.8rem;
-    }
-
-    .blessing {
-      font-size: 2.8rem;
-    }
-
-    .invitation-title,
-    .itinery-title {
-      font-size: 2.2rem;
-      top: 18%;
-      left: 5%;
-    }
-
-    .invitation-details,
-    .itinery-details {
-      position: static;
-      transform: none;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .invitation-details p,
-    .itinery-details p {
-      font-size: 1.1rem;
-    }
-
-    .qr-heading {
-      font-size: 2rem;
-    }
-
-    .qr-image {
-      width: 200px;
-      height: 200px;
-    }
-
-    .location-button {
-      font-size: 1rem;
-      padding: 8px 16px;
-    }
-
-    .itinery-item {
-      font-size: 1.1rem;
-    }
-  }
-*/ 
